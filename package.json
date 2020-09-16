@@ -6,11 +6,15 @@
   "dependencies": {
     "date-fns": "^2.16.1",
     "express": "^4.17.1",
+    "pg": "^8.3.3",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.26",
     "uuidv4": "^6.2.3"
   },
   "scripts": {
     "build": "tsc",
-    "dev:server": "ts-node-dev src/server.ts --transpileOnly --inspect --ignore-watch node_modules"
+    "dev:server": "ts-node-dev src/server.ts --transpileOnly --inspect --ignore-watch node_modules",
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
   },
   "devDependencies": {
     "@types/express": "^4.17.8",
